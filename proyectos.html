@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Proyectos - Aarón Méndiz Sal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        body {
+            background: #121212;
+            color: #e6e6e6;
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.6em;
+            margin: 0;
+            color: #00c8ff;
+        }
+
+        p.subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: #cccccc;
+        }
+
+        .projects-container {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1100px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: #1f1f1f;
+            padding: 22px;
+            width: 260px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            background: #2a2a2a;
+            border-color: #555;
+        }
+
+        .project-icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+            color: #00c8ff;
+        }
+
+        .back-button {
+            background: #00c8ff;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background: #009ecc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Título centrado -->
+    <h1>Mis Proyectos</h1>
+    <p class="subtitle">Infraestructura · Redes · Seguridad · Automatización · IA</p>
+
+    <!-- Proyectos -->
+    <div class="projects-container">
+
+        <!-- Proyecto RAG -->
+        <div class="project-card">
+            <span class="icon solid project-icon fa-brain"></span>
+            <h3>RAG Privado Empresarial</h3>
+            <p>
+                Plataforma con PostgreSQL+pgvector, FastAPI, LLM local, Keycloak y Grafana.
+                Seguridad, ingestión documental y monitorización completa.
+            </p>
+        </div>
+
+        <!-- Proyecto inventado 1 -->
+        <div class="project-card">
+            <span class="icon solid project-icon fa-cloud"></span>
+            <h3>Cluster Proxmox HA</h3>
+            <p>
+                Tres nodos con alta disponibilidad, CephFS, balanceo de carga y
+                despliegue automatizado de máquinas virtuales.
+            </p>
+        </div>
+
+        <!-- Proyecto inventado 2 -->
+        <div class="project-card">
+            <span class="icon solid project-icon fa-shield-alt"></span>
+            <h3>Firewall Corporativo</h3>
+            <p>
+                Diseño de reglas avanzadas, IDS/IPS, VPN site-to-site y segmentación
+                de red para entorno empresarial.
+            </p>
+        </div>
+
+        <!-- Proyecto inventado 3 -->
+        <div class="project-card">
+            <span class="icon solid project-icon fa-database"></span>
+            <h3>Auditoría SQL Completa</h3>
+            <p>
+                Optimización de consultas, creación de roles, vistas seguras y
+                automatización de backups incrementales.
+            </p>
+        </div>
+
+        <!-- Proyecto inventado 4 -->
+        <div class="project-card">
+            <span class="icon solid project-icon fa-network-wired"></span>
+            <h3>Red Empresarial 2026</h3>
+            <p>
+                Infraestructura con VLANs, OSPF, DHCP relay, WiFi corporativo y
+                monitorización con Zabbix.
+            </p>
+        </div>
+
+        <!-- Proyecto inventado 5 -->
+        <div class="project-card">
+            <span class="icon brands project-icon fa-docker"></span>
+            <h3>Microservicios Docker</h3>
+            <p>
+                Arquitectura modular con API Gateway, contenedores aislados y
+                despliegue CI/CD automatizado.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Botón inferior centrado -->
+    <a href="index.html" class="back-button">Volver al CV</a>
+
+</div>
+
+</body>
+</html>
